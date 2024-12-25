@@ -60,9 +60,13 @@ a {
   line-height: 1;
 }
 
-.header .logo img {
+.header .logo img{
   max-height: 36px;
   margin-right: 8px;
+}
+
+.footer .logo img {
+  max-height: 36px;
 }
 
 .header .logo h1 {
@@ -170,6 +174,11 @@ a {
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
+
+  .customer-section, .revenue-card {
+    display: none;
+  }
+
   .mobile-nav-toggle {
     color: var(--text-color-secondary);
     font-size: 28px;
@@ -481,12 +490,31 @@ a {
   }
 }
 
-.choose-up-img img {
+@media (min-width: 992px) {
+
+  .choose-up-img img {
     position: absolute;
     top: -188px;
     left: 50%;
     transform: translate(-50%);
+  }
+
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .choose-up-img img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-height: 400px;
+    bottom: 0px;
+  }
+
+  .choose-down-img img {
+    max-height: 310px;
+  }
+}
+
 
 .choose-us-container {
   background-position: center; 
